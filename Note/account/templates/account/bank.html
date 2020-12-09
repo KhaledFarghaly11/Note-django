@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block title %}BANK{% endblock %}
+{% block content %}
+  <h1>BANK</h1>
+  <p>Welcome to your BANK.</p>
+
+  <form method='POST'>
+    {% csrf_token %}
+    <input type="number" name='amount' />
+
+    <p><input type="submit"/></p>
+  
+  </form>
+
+
+{% endblock %}

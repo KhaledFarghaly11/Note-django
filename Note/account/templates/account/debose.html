@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block title %}BANK{% endblock %}
+{% block content %}
+
+  <form method='POST'>
+    {% csrf_token %}
+    <input type="number" name='debose' />
+
+    <p><input type="submit"/></p>
+  
+  </form>
+
+
+{% endblock %}
